@@ -2,11 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Server for MERN starter",
+  "engines": {
+    "node": "12.13.1"
+  },
   "scripts": {
-    "client-build": "cd ../client npm run clean && npm run build",
     "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./build ./src/bin/www.js -s",
-    "build": "npm run clean && npm run client-build && npm run build-babel",
+    "build": "babel -d ./build ./src/bin/www.js -s",
     "start": "npm run build && node ./build/www.js",
     "dev-start": "nodemon --exec babel-node ./src/bin/www.js",
     "test": "echo \"Error: no test specified\" && exit 1"
