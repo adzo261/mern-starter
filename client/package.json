@@ -32,7 +32,6 @@
     "@babel/preset-stage-0": "^7.0.0",
     "@babel/register": "^7.7.4",
     "babel-loader": "^8.0.6",
-    "babel-register": "^6.26.0",
     "css-loader": "^3.3.2",
     "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
