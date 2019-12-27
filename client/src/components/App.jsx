@@ -8,8 +8,11 @@ export default class App extends Component {
     this.state = {
       status: undefined
     };
+  }
+
+  componentDidMount() {
     axios.get('/api/database').then(response => {
-      this.setState(response.data);
+      this.setState({ status: response.data.status });
     });
   }
 

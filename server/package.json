@@ -6,9 +6,9 @@
     "node": "12.13.1"
   },
   "scripts": {
-    "clean": "rm -rf build && mkdir build",
-    "build": "babel -d ./build ./src/bin/www.js -s",
-    "start": "npm run build && node ./build/www.js",
+    "clean": "rm -rf build",
+    "build": "babel src --out-dir build",
+    "start": "node build/bin/www.js",
     "dev-start": "nodemon --exec babel-node ./src/bin/www.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
