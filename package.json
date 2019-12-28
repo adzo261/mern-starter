@@ -14,7 +14,7 @@
     "server-install": "cd server && npm install",
     "postinstall": "npm run client-install && npm run server-install",
     "client-build": "cd client && npm run clean && npm run build",
-    "server-build": "cd server && npm run clean && npm run build-babel",
+    "server-build": "cd server && npm run clean && npm run build",
     "build": "npm run client-build && npm run server-build"
   },
   "keywords": [
