@@ -37,13 +37,15 @@ export default class App extends Component {
               : 'Database connection successful')}
         </div>
         <div id="footer">
-          <img
-            src={Logo}
-            alt="Codeagni"
-            width="133"
-            height="35"
-            style={{ marginRight: '20px' }}
-          />
+          <a href="https://github.com/codeagni">
+            <img
+              src={Logo}
+              alt="Codeagni"
+              width="133"
+              height="35"
+              style={{ marginRight: '20px' }}
+            />
+          </a>
         </div>
       </div>
     );
