@@ -11,9 +11,18 @@ An easy to use, mern template to kickstart developing apps
 </div>
 <br>
 <p align="center">
-<a href="https://github.com/codeagni/mern-starter/blob/master/LICENSE" alt="License MIT">
+    <a href="https://github.com/codeagni/mern-starter/blob/master/LICENSE" alt="License MIT">
       <img src="https://img.shields.io/github/license/codeagni/mern-starter?color=success" />
-      </a>
+    </a>
+    <a href="" alt="TravisCI">
+      <img src="https://api.travis-ci.org/codeagni/mern-starter.svg?branch=master" />
+    </a>
+    <a href="https://github.com/airbnb/javascript" alt="Code Style">
+      <img src="https://badgen.net/badge/code%20style/airbnb/ff5a5f?icon=airbnb" />
+    </a>
+</p>
+<br>
+<p align="center">
     <a href="" alt="@babel/core">
       <img src="https://img.shields.io/github/package-json/dependency-version/codeagni/mern-starter/dev/@babel/core?filename=client%2Fpackage.json" />
       </a>
@@ -38,10 +47,6 @@ An easy to use, mern template to kickstart developing apps
       <a href="" alt="node">
       <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=node&query=%24.engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Fcodeagni%2Fmern-starter%2Fmaster%2Fclient%2Fpackage.json" />
       </a>
-      <a href="" alt="TravisCI">
-      <img src="https://api.travis-ci.org/codeagni/mern-starter.svg?branch=master" />
-      </a>
-
 </p>
 
 ## Hosted on Heruko
