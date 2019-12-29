@@ -124,3 +124,12 @@ Run only server express app locally:
 $ cd server
 $ npm run dev-start
 ```
+
+## Contributing
+
+1. Read the <a href="https://github.com/codeagni/mern-starter/blob/master/CODE_OF_CONDUCT.md" alt="@babel/preset-react">CODE OF CONDUCT</a>
+2. Fork the repo
+3. Create your feature branch (`git checkout -b feature/fooBar`)
+4. Commit your changes (`git commit -am 'Add some fooBar'`)
+5. Push to the branch (`git push origin feature/fooBar`)
+6. Create a new Pull Request
