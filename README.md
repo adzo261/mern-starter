@@ -1,6 +1,7 @@
 <div align="center">
 <h1> MERN Starter Template     
   <p>
+  <br>
     <a href="" alt="Codeagni">
       <img src="https://img.shields.io/badge/Made%20by-Codeagni-orange?style=for-the-badge" />
     </a>
@@ -8,6 +9,7 @@
 </h1>
 An easy to use, mern template to kickstart developing apps
 </div>
+<br>
 <p align="center">
 <a href="https://github.com/codeagni/mern-starter/blob/master/LICENSE" alt="License MIT">
       <img src="https://img.shields.io/github/license/codeagni/mern-starter?color=success" />
@@ -35,6 +37,9 @@ An easy to use, mern template to kickstart developing apps
       </a>
       <a href="" alt="node">
       <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=node&query=%24.engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Fcodeagni%2Fmern-starter%2Fmaster%2Fclient%2Fpackage.json" />
+      </a>
+      <a href="" alt="TravisCI">
+      <img src="https://api.travis-ci.org/codeagni/mern-starter.svg?branch=master" />
       </a>
 
 </p>
