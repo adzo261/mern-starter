@@ -11,8 +11,8 @@ class Database {
         console.log('Database Connection Successful');
       })
       .catch(err => {
-        Database.status = 'false';
-        console.error(`Database Connection Error ${err}`);
+        Database.status = false;
+        console.log(`Database Connection Error ${err}`);
       });
   }
 }
