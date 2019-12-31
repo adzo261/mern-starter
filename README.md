@@ -38,6 +38,15 @@ An easy to use, mern template to kickstart developing apps
     <a href="" alt="react">
       <img src="https://img.shields.io/github/package-json/dependency-version/codeagni/mern-starter/react?filename=client%2Fpackage.json" />
       </a>
+      <a href="" alt="redux">
+      <img src="https://img.shields.io/github/package-json/dependency-version/codeagni/mern-starter/redux?filename=client%2Fpackage.json" />
+      </a>
+      <a href="" alt="react-redux">
+      <img src="https://img.shields.io/github/package-json/dependency-version/codeagni/mern-starter/react-redux?filename=client%2Fpackage.json" />
+      </a>
+      <a href="" alt="redux-thunk">
+      <img src="https://img.shields.io/github/package-json/dependency-version/codeagni/mern-starter/redux-thunk?filename=client%2Fpackage.json" />
+      </a>
        <a href="" alt="express">
       <img src="https://img.shields.io/github/package-json/dependency-version/codeagni/mern-starter/express?filename=server%2Fpackage.json" />
       </a>
@@ -60,11 +69,15 @@ https://mern-starter.herokuapp.com/
     ├── client                        # client react app
         ├── dist                      # client build folder
         ├──  src
+            ├──  actions              # redux actions
             ├──  components           # react components
+            ├──  constants            # stores constants
             ├──  images               # image assets
+            ├──  reducers             # redux reducers
             ├──  index.css            # base css
             ├──  index.html           # base html
             ├──  index.jsx            # base react component
+            ├──  store.js             # redux store
         ├──.babelrc                   # babel config
         ├──.package.json
         ├──.webpack.config.babel.js   # webpack config written in es6
@@ -72,17 +85,17 @@ https://mern-starter.herokuapp.com/
         ├── build                     # server build folder
         ├──  src
             ├──  bin
-                ├──  www.js           # sever entry point
+                ├──  www.js           # server entry point
             ├──  routes               # routes folder
                 ├──  index.js
             ├──  database.js          # database config
             ├──  server.js            # server config
-        ├──.babelrc                   # babel confi
+        ├──.babelrc                   # babel config
         ├──  .env                     # env variables
         ├──.package.json
     ├── .eslintrc.json                # es linting config
     ├── .prettierrc
-    ├── .travis.yml                  # travis CI
+    ├── .travis.yml                   # travis CI
     ├── package.json
     ├── LICENSE
     └── README.md
@@ -105,25 +118,23 @@ Create a `.env` file in `server` folder as follows:
 DATABASE=your_database_uri
 ```
 
-Run app locally:
+Run only server express app locally and keep terminal open:
 
 ```sh
-$ npm run dev
+$ cd server
+$ npm run dev-start
 ```
 
-Run only client react app locally:
+Run only client react app locally in new terminal:
 
 ```sh
 $ cd client
 $ npm run start
 ```
 
-Run only server express app locally:
+### <u>Note:</u>
 
-```sh
-$ cd server
-$ npm run dev-start
-```
+`no-shadow` eslinting rule has been turned off just to avoid linting errors with redux's `mapStateToProps` and `mapDispatchToProps`.
 
 ## Contributing
 
