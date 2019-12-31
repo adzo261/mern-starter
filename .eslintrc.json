@@ -2,7 +2,8 @@
   "extends": ["airbnb", "prettier"],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "no-shadow": "off"
   },
   "env": {
     "browser": true,
