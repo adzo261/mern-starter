@@ -1,23 +1,18 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Logo from '../images/codeagni.png';
+import fetchDBStatus from '../actions/databaseActions';
 
-export default class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      status: undefined
-    };
-  }
-
+class App extends Component {
   componentDidMount() {
-    axios.get('/api/database').then(response => {
-      this.setState({ status: response.data.status });
-    });
+    const { fetchDBStatus } = this.props;
+    fetchDBStatus();
   }
 
   render() {
-    const { status } = this.state;
+    const { status } = this.props;
+
     return (
       <div>
         <h1>MERN Starter</h1>
@@ -51,3 +46,13 @@ export default class App extends Component {
     );
   }
 }
+App.propTypes = {
+  fetchDBStatus: PropTypes.func.isRequired,
+  status: PropTypes.bool
+};
+App.defaultProps = {
+  status: undefined
+};
+const mapStateToProps = state => ({ status: state.db.status });
+
+export default connect(mapStateToProps, { fetchDBStatus })(App);

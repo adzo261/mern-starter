@@ -25,7 +25,6 @@
   "author": "codeagni",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^5.0.1",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
