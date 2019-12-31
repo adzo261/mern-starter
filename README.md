@@ -108,8 +108,6 @@ Fork it and clone as local repository.
 ```sh
 $ cd mern-starter
 $ npm install
-$ npm run client-install
-$ npm run server-install
 ```
 
 Create a `.env` file in `server` folder as follows:
